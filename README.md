@@ -1,2 +1,0 @@
-# gds-regex
-Product categorisation
