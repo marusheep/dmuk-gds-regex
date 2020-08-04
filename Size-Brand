@@ -1,0 +1,17 @@
+CASE
+WHEN REGEXP_MATCH(Product Name,'.*(?i)nike.*|.*(?i)jordan.*') THEN "NIKE"
+WHEN REGEXP_MATCH(Product Name,'.*(?i)vans.*') THEN "Vans"
+WHEN REGEXP_MATCH(Product Name,'.*(?i)fila.*') THEN "FILA"
+WHEN REGEXP_MATCH(Product Name,'.*(?i)converse.*') THEN "Converse"
+WHEN REGEXP_MATCH(Product Name,'.*(?i)new.*(?i)era.*') THEN "New Era"
+WHEN REGEXP_MATCH(Product Name,'.*(?i)Reebok.*') THEN "Reebok"
+WHEN REGEXP_MATCH(Product Name,'.*(?i)stussy.*') THEN "Stussy"
+WHEN REGEXP_MATCH(Product Name,'.*(?i)adidas.*') THEN "adidas"
+WHEN REGEXP_MATCH(Product Name,'.*(?i)PUMA.*') THEN "PUMA"
+WHEN REGEXP_MATCH(Product Name,'.*(?i)Kangol.*') THEN "Kangol"
+WHEN REGEXP_MATCH(Product Name,'.*(?i)The.*(?i)North.*(?i)Face.*') THEN "The North Face"
+WHEN REGEXP_MATCH(Product Name,'.*(?i)Levis.*') THEN "Levis"
+WHEN REGEXP_MATCH(Product Name,'.*(?i)new.*(?i)balance.*') THEN "New Balance"
+WHEN REGEXP_MATCH(Product Name,'.*HUF.*') THEN "HUF"
+ELSE "Other"
+END
