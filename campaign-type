@@ -1,4 +1,0 @@
-CASE
-    WHEN REGEXP_MATCH(ID,'^P-.*') THEN "Placement"
-    ELSE "Deal"
-END
