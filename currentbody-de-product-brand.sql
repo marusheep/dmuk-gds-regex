@@ -19,6 +19,9 @@ WHEN REGEXP_MATCH(sku,'^HAY-.*') THEN "HAYO'U"
 WHEN REGEXP_MATCH(sku,'^ICTV-.*') THEN "DermaWand"
 WHEN REGEXP_MATCH(sku,'^ST-.*') THEN "Slendertone"
 WHEN REGEXP_MATCH(sku,'^LFT-.*') THEN "LifeTrons"
+WHEN REGEXP_MATCH(sku,'^LQ-.*') THEN "LARQ"
+WHEN REGEXP_MATCH(sku,'^IL-.*') THEN "iluminage"
+WHEN REGEXP_MATCH(sku,'^T3-.*') THEN "T3"
 WHEN REGEXP_MATCH(sku,'^DEALMOON$') THEN "Dealmoon"
 
 END
