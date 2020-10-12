@@ -1,8 +1,8 @@
 CASE
-	WHEN REGEXP_MATCH(StoreName,'LOOKFANTASTIC 英国官网|Lookfantastic英国官网') THEN "Lookfantastic UK"
+	WHEN REGEXP_MATCH(StoreName,'(?i)LOOKFANTASTIC.*英国官网') THEN "Lookfantastic UK"
     WHEN REGEXP_MATCH(StoreName,'Lookfantastic法国官网') THEN "Lookfantastic FR"
     WHEN REGEXP_MATCH(StoreName,'Amazon英国亚马逊') THEN "Amazon UK"
-    WHEN REGEXP_MATCH(StoreName,'Dealmoon英国省钱快报') THEN "Dealmoon UK"
+    WHEN REGEXP_MATCH(StoreName,'Dealmoon英国省钱快报|Dealmoon.com') THEN "Dealmoon UK"
     WHEN REGEXP_MATCH(StoreName,'Nike耐克英国官网') THEN "Nike UK"
     WHEN REGEXP_MATCH(StoreName,'(?i)adidas英国官网|(?i)adidas.*UK') THEN "adidas UK"
     WHEN REGEXP_MATCH(StoreName,'Urban Outfitters英国官网') THEN "Urban Outfitters UK"
