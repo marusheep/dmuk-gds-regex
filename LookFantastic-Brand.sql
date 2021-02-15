@@ -165,5 +165,9 @@ CASE
   WHEN REGEXP_MATCH(Product Name, '(?i)Prada.*') THEN "Prada"
   WHEN REGEXP_MATCH(Product Name, '(?i)Narciso.*') THEN "Narciso"
   WHEN REGEXP_MATCH(Product Name, '(?i)Medik8.*') THEN "Medik8"
+  WHEN REGEXP_MATCH(Product Name, '(?i)Sol de Janeiro.*') THEN "Sol de Janeiro"
+  WHEN REGEXP_MATCH(Product Name, '(?i)Maui Moisture.*') THEN "Maui Moisture"
+  WHEN REGEXP_MATCH(Product Name, 'OGX.*') THEN "OGX"
+  WHEN REGEXP_MATCH(Product Name, '(?i)Carrière Frères.*') THEN "Carrière Frères"
   WHEN REGEXP_MATCH(Product Name, '(?i).*LookFantastic.*|LF.*') THEN "LookFantastic"
 END
