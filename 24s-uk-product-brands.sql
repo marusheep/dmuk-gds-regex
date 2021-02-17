@@ -56,5 +56,9 @@ WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)maison_margiela$') OR REGEXP_MATCH(SKU,'^MMM.
 WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)demellier$') OR REGEXP_MATCH(SKU,'^DEM.*') THEN "DeMellier"
 WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)gu_de$') OR REGEXP_MATCH(SKU,'^GDE.*') THEN "Gu_De"
 WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)gucci$') OR REGEXP_MATCH(SKU,'^GUC.*') THEN "GUCCI"
+WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)adidas$') OR REGEXP_MATCH(SKU,'^ADI.*') THEN "adidas"
+WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)staud$') OR REGEXP_MATCH(SKU,'^STD.*') THEN "STAUD"
+WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)ganni$') OR REGEXP_MATCH(SKU,'^GAN.*') THEN "GANNI"
+WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)valentino$') OR REGEXP_MATCH(SKU,'^VAL.*') THEN "Valentino"
 
 END
