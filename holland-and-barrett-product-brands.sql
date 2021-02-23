@@ -55,7 +55,7 @@ CASE
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)sula.*') THEN "Sula"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)sukin.*') THEN "Sukin"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)sterimar.*') THEN "Sterimar"
-    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)starpowa.*') THEN "Starpowa"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)starpowa.*|skin and nail gummies') THEN "Starpowa"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)Sowan.*') THEN "Sowan's"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)Source.*') THEN "Source"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)solgar.*') THEN "Solgar"
@@ -79,5 +79,30 @@ CASE
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)quest.*') THEN "QUEST"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)puressentiel.*') THEN "Puressentiel"
 
-    -- pure gold select npa manuka honey 5
+/* pure gold select npa manuka honey 5, from the line above it sorted by sales */
+
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)hairburst.*') THEN "Hairburst"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)manuka doctor.*') THEN "Manuka Doctor"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)nature.*s garden.*|good n natural.*') THEN "Natures Garden"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)nutritional headquarters.*') THEN "Nutritional Headquarters"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)manuka lab.*') THEN "Manuka Lab"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)ortis.*') THEN "Ortis"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)eat water.*') THEN "Eat Water"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)nature.*s aid.*') THEN "Natures aid"
+    WHEN REGEXP_MATCH(meta_item_item_name,'.*(?i)gold collagen.*') THEN "Gold Collagen"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)chia bia.*') THEN "Chia Bia"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)hri.*') THEN "HRi herbal"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)new nordic.*') THEN "New Nordic"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)phd.*') THEN "PhD"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)optimum nutrition.*') THEN "Optimum Nutrition"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)ecodenta.*') THEN "Ecodenta"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)power health.*') THEN "Power Health"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)macu-save.*') THEN "Macu-Save"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)bioglan.*') THEN "Bioglan"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)bragg.*') THEN "Bragg"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)minor figures.*') THEN "Minor Figures"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)jacob hooy.*') THEN "Jacob Hooy"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)floradix.*') THEN "Floradix"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)egmont honey.*') THEN "Egmont Honey"
+
 END
