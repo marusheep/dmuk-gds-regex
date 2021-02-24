@@ -138,5 +138,15 @@ CASE
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)linwoods.*') THEN "Linwoods"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)haliborange.*') THEN "Haliborange"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)pretty gorgeous.*') THEN "Pretty Gorgeous"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)patch it.*') THEN "Patch It"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)biona.*') THEN "Biona"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)glebe farm.*') THEN "Glebe Farm"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)hubner.*') THEN "Hubner"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)centrum.*') THEN "Centrum"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)protein world.*') THEN "Protein World"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)aloe pura.*') THEN "Aloe Pura"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)fsc.*') THEN "FSC"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)cherry active.*') THEN "Active Edge"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)equazen.*') THEN "Equazen"
 
 END
