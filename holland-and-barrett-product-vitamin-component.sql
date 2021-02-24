@@ -19,6 +19,7 @@ CASE
     WHEN REGEXP_MATCH(meta_item_item_name,'.*(?i)selenium.*') THEN "Selenium"
     WHEN REGEXP_MATCH(meta_item_item_name,'.*(?i)calcium.*') THEN "calcium"
     WHEN REGEXP_MATCH(meta_item_item_name,'.*(?i)iron.*') THEN "Iron"
+    WHEN REGEXP_MATCH(meta_item_item_name,'.*(?i)zinc.*') THEN "Zinc"
     WHEN REGEXP_MATCH(meta_item_item_name,'.*(?i)betacarotene.*') THEN "Betacarotene"
 
     WHEN REGEXP_MATCH(meta_item_item_name,'.*(?i)acidophilus.*') THEN "Acidophilus"
