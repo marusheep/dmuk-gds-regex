@@ -128,5 +128,15 @@ CASE
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)grenade.*') THEN "Grenade"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)little.*s.*') THEN "Little's"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)dr organic.*') THEN "Dr Organic"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)eat real.*') THEN "Eat Real"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)fitness pharma.*') THEN "Fitness Pharma"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)medi-evil.*') THEN "Medi-evil Nutrition"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)active iron.*') THEN "Active Iron"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)a.vogel.*') THEN "A Vogel"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)cho yung.*') THEN "Cho Yung"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)dead sea spa magik.*') THEN "Dead Sea Spa Magik"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)linwoods.*') THEN "Linwoods"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)haliborange.*') THEN "Haliborange"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)pretty gorgeous.*') THEN "Pretty Gorgeous"
 
 END
