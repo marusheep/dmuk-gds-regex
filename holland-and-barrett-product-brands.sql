@@ -157,5 +157,17 @@ CASE
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)ape.*') THEN "Ape Snacks"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)better than.*') THEN "Better Than"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)mighty pea.*') THEN "Mighty Pea"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)nakd.*') THEN "Nakd"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)prewett.*s.*') THEN "Prewett's"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)heath & heather.*') THEN "Heath & Heather"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)itsu.*') THEN "Itsu"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)bounce.*') THEN "Bounce"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)indie bay.*') THEN "Indie Bay"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)pukka.*') THEN "Pukka"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)terrafertil.*') THEN "Terrafertil"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)livia.*s.*') THEN "Livia's"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)peakz.*') THEN "Peakz"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)forest feast.*') THEN "Forest Feast"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)natur boutique.*') THEN "Natur Boutique"
 
 END
