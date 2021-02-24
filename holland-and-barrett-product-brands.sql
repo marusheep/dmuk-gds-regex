@@ -120,5 +120,13 @@ CASE
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)spatone.*') THEN "Spatone"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)meridian.*') THEN "Meridian"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)diablo.*') THEN "Diablo"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)other foods.*') THEN "Other Foods"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)provamel.*') THEN "Provamel"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)pro-ven.*') THEN "Pro-Ven"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)nairn.*s.*') THEN "Nairn's"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)garbanzo.*') THEN "Garbanzo"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)grenade.*') THEN "Grenade"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)little.*s.*') THEN "Little's"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)dr organic.*') THEN "Dr Organic"
 
 END
