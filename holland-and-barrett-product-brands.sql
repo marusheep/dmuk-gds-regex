@@ -78,9 +78,7 @@ CASE
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)quinola.*') THEN "QUINOLA"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)quest.*') THEN "QUEST"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)puressentiel.*') THEN "Puressentiel"
-
-/* pure gold select npa manuka honey 5, from the line above it sorted by sales */
-
+/* From the line above it sorted by sales */
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)hairburst.*') THEN "Hairburst"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)manuka doctor.*') THEN "Manuka Doctor"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)nature.*s garden.*|good n natural.*') THEN "Natures Garden"
@@ -148,5 +146,16 @@ CASE
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)fsc.*') THEN "FSC"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)cherry active.*') THEN "Active Edge"
     WHEN REGEXP_MATCH(meta_item_item_name,'(?i)equazen.*') THEN "Equazen"
+/* From here, sorted by quantity */
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)dai wang korean.*') THEN "Dai Wang Korean"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)kallo.*') THEN "Kallo"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)fibre one.*') THEN "Fibre One"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)nutramino.*') THEN "Nutramino"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)emily.*crisps.*') THEN "Emily Crisps"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)doisy & dam.*') THEN "Doisy & Dam"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)mummy meagz.*') THEN "Mummy Meagz"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)ape.*') THEN "Ape Snacks"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)better than.*') THEN "Better Than"
+    WHEN REGEXP_MATCH(meta_item_item_name,'(?i)mighty pea.*') THEN "Mighty Pea"
 
 END
