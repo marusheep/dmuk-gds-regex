@@ -113,5 +113,6 @@ WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)miansai$') OR REGEXP_MATCH(SKU,'^MIA.*') THEN
 WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)gas_bijoux$') OR REGEXP_MATCH(SKU,'^GAS.*') THEN "Gas Bijoux"
 WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)proenza_schouler$') OR REGEXP_MATCH(SKU,'^PSL.*') THEN "Proenza Schouler"
 WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)sportmax$') OR REGEXP_MATCH(SKU,'^SPO.*') THEN "Sportmax"
+WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)eytys$') OR REGEXP_MATCH(SKU,'^EYT.*') THEN "Eytys"
 
 END
