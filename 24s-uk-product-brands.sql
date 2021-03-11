@@ -20,6 +20,8 @@ WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)tata_harper$') OR REGEXP_MATCH(SKU,'^TAT.*') 
 WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)by_terry$') OR REGEXP_MATCH(SKU,'^BYT.*') THEN "By Terry"
 WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)granado$') OR REGEXP_MATCH(SKU,'^GRA.*') THEN "Granado"
 WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)augustinus_bader$') OR REGEXP_MATCH(SKU,'^AGB.*') THEN "Augustinus Bader"
+WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)dr_barbara_sturm$') OR REGEXP_MATCH(SKU,'^DRB.*') THEN "Dr. Barbara Sturm"
+
 
 # Fashion
 WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)veja$') OR REGEXP_MATCH(SKU,'^VEJ.*') THEN "Veja"
@@ -105,5 +107,11 @@ WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)nanushka$') OR REGEXP_MATCH(SKU,'^NAN.*') THE
 WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)rivieras$') OR REGEXP_MATCH(SKU,'^RIV.*') THEN "Rivieras"
 WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)rains$') OR REGEXP_MATCH(SKU,'^RAI.*') THEN "Rains"
 WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)ami$') OR REGEXP_MATCH(SKU,'^AMI.*') THEN "AMI"
+WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)Tods$') OR REGEXP_MATCH(SKU,'^TOD.*') THEN "Tod's"
+WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)medecine_douce$') OR REGEXP_MATCH(SKU,'^MDO.*') THEN "Medecine Douce"
+WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)miansai$') OR REGEXP_MATCH(SKU,'^MIA.*') THEN "Miansai"
+WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)gas_bijoux$') OR REGEXP_MATCH(SKU,'^GAS.*') THEN "Gas Bijoux"
+WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)proenza_schouler$') OR REGEXP_MATCH(SKU,'^PSL.*') THEN "Proenza Schouler"
+WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)sportmax$') OR REGEXP_MATCH(SKU,'^SPO.*') THEN "Sportmax"
 
 END
