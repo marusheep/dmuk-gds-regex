@@ -1,7 +1,7 @@
 /*
 [TOP[] - Fashion items. [BUTTOM] - Beauty items
 Group by product relativity, sort desc by category sheet
-Regex need to update to the G-sheet
+!!!Regex need to update to the G-sheet
 */
 
 CASE
