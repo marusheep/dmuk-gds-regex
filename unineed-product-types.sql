@@ -5,10 +5,11 @@ Group by product relativity, sort desc by category sheet
 */
 
 CASE
-	WHEN regexp_match(Product Name,'.*(?i)Shoulder Bag.*') THEN "Shoulder Bag"
-    WHEN regexp_match(Product Name,'.*(?i)Scarf.*') THEN "Scarf"
-    WHEN regexp_match(Product Name,'.*(?i)Sunglasses.*') THEN "Sunglasses"
-    WHEN regexp_match(Product Name,'.*(?i)Watch.*') THEN "Watch"
+	WHEN regexp_match(Product Name,'.*(?i)Sunglass.*') THEN "Sunglasses"
+    WHEN regexp_match(Product Name,'.*(?i)Scarf.*|.*(?i)scarves.*') THEN "Scarf"
+    WHEN regexp_match(Product Name,'.*(?i)Plating.*|.*(?i)Watch.*') THEN "Jewelry"
+
+    WHEN regexp_match(Product Name,'.*(?i)Shoulder Bag.*') THEN "Shoulder Bag"
     
 
     WHEN regexp_match(Product Name,'.*(?i)Toothbrush.*|.*(?i)Sonicare.*|.*(?i)Toothpaste.*') THEN "Dental Care"
@@ -29,7 +30,7 @@ CASE
     WHEN regexp_match(Product Name,'.*(?i)Mascara.*|.*(?i)Eye lash.*|.*(?i)Eye brow.*|.*(?i)Eye shadow.*|.*(?i)Eye liner.*') THEN "Eye Makeup"
     WHEN regexp_match(Product Name,'.*(?i)Palette.*') THEN "Palette"
     WHEN regexp_match(Product Name,'.*(?i)Primer.*|.*(?i)Foundation.*|.*(?i)Concealer.*|.*(?i)Broner.*|.*(?i)Blush.*|.*(?i)Highlight.*|.*(?i)Powder.*|.*(?i)BB Cream.*|.*(?i)CC cream.*') THEN "Complexion"
-    WHEN regexp_match(Product Name,'.*(?i)Lipstick.*|.*(?i)lip.*stain.*|.*(?i)lip.*gloss.*|.*(?i)lip.*tatoo.*|.*(?i)Lip.*oil.*|.*(?i)Ultra Rouge.*') THEN "Lip Makeup"
+    WHEN regexp_match(Product Name,'.*(?i)Lipstick.*|.*(?i)lip.*stain.*|.*(?i)lip.*gloss.*|.*(?i)lip.*tattoo.*|.*(?i)Lip.*oil.*|.*(?i)Ultra Rouge.*') THEN "Lip Makeup"
 
     WHEN regexp_match(Product Name,'.*(?i)Cleansing.*|.*(?i)Cleanser.*|.*(?i)Facial.*soap.*|.*(?i)peel.*|.*(?i)facial.*wash.*|.*(?i)Exfoliater.*|.*(?i)Cleansing.*Milk.*') THEN "Peels/Face Cleanser"
     WHEN regexp_match(Product Name,'.*(?i)lip.*balm.*') THEN "Lip Care"
@@ -37,7 +38,7 @@ CASE
     WHEN regexp_match(Product Name,'.*(?i)Mist.*|.*(?i)*balm.*') THEN "Mist/Balm"
     WHEN regexp_match(Product Name,'.*(?i)Essence.*|.*(?i)Ampoule.*|.*(?i)Serum.*|.*(?i)Concentrate.*|.*(?i)Skin.*Lift.*|.*(?i)Ecological Compound.*') THEN "Essence"
     WHEN regexp_match(Product Name,'.*(?i)Lotion.*|.*(?i)Cream.*|.*(?i)Crème.*') THEN "Facial Cream"
-    WHEN regexp_match(Product Name,'.*(?i)Toner.*') THEN "Toner"
+    WHEN regexp_match(Product Name,'.*(?i)Toner.*|.*(?i)Confort Tonique.*') THEN "Toner"
     WHEN regexp_match(Product Name,'.*(?i)Mask.*|.*(?i)Skin Vitality Treatment.*|.*(?i)Prime Renewing Pack.*') THEN "Facial Mask"
     WHEN regexp_match(Product Name,'.*(?i)Oil.*') THEN "Facial Oil"
 
