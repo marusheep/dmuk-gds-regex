@@ -30,7 +30,7 @@ CASE
     WHEN regexp_match(Product Name,'.*(?i)Mascara.*|.*(?i)Eye lash.*|.*(?i)Eye brow.*|.*(?i)Eye shadow.*|.*(?i)Eye liner.*') THEN "Eye Makeup"
     WHEN regexp_match(Product Name,'.*(?i)Palette.*') THEN "Palette"
     WHEN regexp_match(Product Name,'.*(?i)Primer.*|.*(?i)Foundation.*|.*(?i)Concealer.*|.*(?i)Broner.*|.*(?i)Blush.*|.*(?i)Highlight.*|.*(?i)Powder.*|.*(?i)BB Cream.*|.*(?i)CC cream.*') THEN "Complexion"
-    WHEN regexp_match(Product Name,'.*(?i)Lipstick.*|.*(?i)lip.*stain.*|.*(?i)lip.*gloss.*|.*(?i)lip.*tattoo.*|.*(?i)Lip.*oil.*|.*(?i)Ultra Rouge.*') THEN "Lip Makeup"
+    WHEN regexp_match(Product Name,'.*(?i)Lipstick.*|.*(?i)lip.*stain.*|.*(?i)lip.*gloss.*|.*(?i)lip.*tattoo.*|.*(?i)Lip.*oil.*|.*(?i)Lip.*plump.*|.*(?i)Ultra Rouge.*') THEN "Lip Makeup"
 
     WHEN regexp_match(Product Name,'.*(?i)Cleansing.*|.*(?i)Cleanser.*|.*(?i)Facial.*soap.*|.*(?i)peel.*|.*(?i)facial.*wash.*|.*(?i)Exfoliater.*|.*(?i)Cleansing.*Milk.*') THEN "Peels/Face Cleanser"
     WHEN regexp_match(Product Name,'.*(?i)lip.*balm.*') THEN "Lip Care"
