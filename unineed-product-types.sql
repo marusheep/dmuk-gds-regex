@@ -5,7 +5,7 @@ Group by product relativity, sort desc by category sheet
 
 CASE
 	WHEN regexp_match(Product Name,'.*(?i)Shoulder Bag.*|.*(?i)Crossbody Bag.*|.*(?i)Saddle Bag.*|.*(?i)Messenger Bag.*|.*(?i)Satchel.*') 
-        THEN "Shoulder Bag & Crossbody Bag "
+        THEN "Shoulder Bag & Crossbody Bag"
     WHEN regexp_match(Product Name,'.*(?i)Card holder.*|.*(?i)Wallet.*|.*(?i)Hand.*bag.*') 
         THEN "Mini Bag & Hand Bag"
 
@@ -45,14 +45,14 @@ CASE
         THEN "Hair Treatment"
     
     WHEN regexp_match(Product Name,'.*(?i)Body.*oil.*|.*(?i)Body lotion.*|.*Clarins.*Body Fit.*|.*Clarins.*Bust.*.*Gel.*') 
-        THEN "Body Oils/Body Lotions"
+        THEN "Body Oil/Body Lotion"
     WHEN regexp_match(Product Name,'.*(?i)Bath.*|.*(?i)Shower gel.*|.*(?i)Shower.*oil.*|.*(?i)Body Wash.*|.*(?i)Body Polish.*|.*(?i)Feminine Wash.*') 
         THEN "Bath/Body Wash"
     WHEN regexp_match(Product Name,'.*(?i)Hand.*cream.*|.*(?i)Hand.*balm.*|.*(?i)Hand Wash.*|.*Ziaja.*Wash Gel.*') 
         THEN "Hand & Foot Care"
     
     WHEN regexp_match(Product Name,'.*(?i)Make.*up remover.*|.*(?i)Make.*up removal.*') 
-        THEN "Makeup remover"
+        THEN "Makeup Remover"
     WHEN regexp_match(Product Name,'.*(?i)Mascara.*|.*(?i)Eye lash.*|.*(?i)Eye brow.*|.*(?i)Eye shadow.*|.*(?i)Medium Brown.*|.*(?i)Eye.*liner.*|.*(?i)Eye.*(?i)Pencil.*|.*(?i)Brow.*Pencil.*|.*(?i)Brow Shaper.*|.*(?i)Eyebrow Crayon.*') 
         THEN "Eye Makeup"
     WHEN regexp_match(Product Name,'.*(?i)Palette.*') 
