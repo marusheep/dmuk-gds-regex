@@ -9,12 +9,14 @@ CASE
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Nail.*') 
         THEN "Nail Care"
 
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Pillow Spray.*') 
+        THEN "Pillow Mist"
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Candle.*') 
         THEN "Candle"
     WHEN REGEXP_MATCH(Product Name,'.*EDT.*ml.*|.*ml.*EDT.*|.*EDP.*ml.*|.*ml.*EDP.*|.*(?i)Eau de Toillette.*|.*(?i)Eau de Toilette.*|.*(?i)Eau De Perfume.*|.*(?i)Eau de Parfum.*|.*(?i)Eau de Pafum.*|.*(?i)Cologne.*') 
         THEN "Perfurme"
 
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Moroccan.*oil.*|.*(?i)Hair.*mask.*') 
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Moroccan.*oil.*|.*(?i)Hair.*mask.*|.*Kerastase.*Masque.*') 
         THEN "Hair Treatment"
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Shampoo.*|.*(?i)conditioner.*|.*Kerastase.*(?i)Densifique Bain Densite.*') 
         THEN "Shampoo & Conditioner"
@@ -41,9 +43,9 @@ CASE
         THEN "Peels/Face Cleanser"
     WHEN REGEXP_MATCH(Product Name,'.*(?i)lip.*balm.*|.*(?i)Lip.*scrub.*|.*(?i)Lip.*Protectant.*') 
         THEN "Lip Care"
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Eye.*mask.*|.*(?i)Eye.*(?i)cream.*|.*(?i)Eye.*serum.*|.*(?i)Eye.*balm.*|.*(?i)Essence.*eye.*|.*(?i)Eye.*Treatment.*|.*(?i)Eye.*essence.*|.*(?i)oil.*eye.*|.*Estée Lauder.*Advanced Night Repair.*Eye.*|.*Estee Lauder.*Advanced Night Repair.*Eye.*|.*Clinique.*Radical Dark Spot.*') 
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Eye.*mask.*|.*(?i)Eye.*(?i)cream.*|.*(?i)Eye.*serum.*|.*(?i)Eye.*balm.*|.*(?i)Essence.*eye.*|.*(?i)Eye.*Treatment.*|.*(?i)Eye.*essence.*|.*(?i)oil.*eye.*|.*(?i)Eye.*care.*|.*Estée Lauder.*Advanced Night Repair.*Eye.*|.*Estee Lauder.*Advanced Night Repair.*Eye.*|.*Clinique.*Radical Dark Spot.*') 
         THEN "Eye Care"
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Mist.*|.*(?i)*balm.*|.*Caudalie.*(?i)Grape Water.*') 
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Mist.*|.*(?i)*balm.*|.*Caudalie.*(?i)Grape Water.*|.*Avène.*Water.*') 
         THEN "Mist/Balm"
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Essence.*|.*(?i)Ampoule.*|.*(?i)Serum.*|.*(?i)Capsules.*|.*(?i)Concentrate.*|.*(?i)Skin.*Lift.*|.*(?i)Ecological Compound.*|.*Estee Lauder.*(?i)Advanced Night Repair.*Recovery Complex.*|.*Lancôme.*Genifique.*') 
         THEN "Essence"
