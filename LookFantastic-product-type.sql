@@ -34,9 +34,9 @@ CASE
         THEN "Eye Makeup"
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Palette.*') 
         THEN "Palette"
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Primer.*|.*(?i)Foundation.*|.*(?i)Concealer.*|.*(?i)Broner.*|.*(?i)Blush.*|.*(?i)Highlight.*|.*(?i)Powder.*|.*(?i)BB Cream.*|.*(?i)CC cream.*') 
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Primer.*|.*(?i)Foundation.*|.*(?i)Concealer.*|.*(?i)Broner.*|.*(?i)Blush.*|.*(?i)Highlight.*|.*(?i)Powder.*|.*(?i)BB Cream.*|.*(?i)CC cream.*|.*NYX.*Setting Spray.*') 
         THEN "Complexion"
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Lipstick.*|.*(?i)lip.*stain.*|.*(?i)lip.*gloss.*|.*(?i)lip.*tattoo.*|.*(?i)Lip.*oil.*|.*(?i)Lip.*plump.*|.*(?i)Lip Liner.*|.*(?i)Lip Pencil.*|.*(?i)Lip Lacquer.*|.*(?i)Lip Velvet.*|.*(?i)Lip Matte.*|.*(?i)Lip Maestro.*|.*Burberry.*Kisses.*') 
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Lipstick.*|.*(?i)lip.*stain.*|.*(?i)lip.*gloss.*|.*(?i)lip.*tattoo.*|.*(?i)Lip.*oil.*|.*(?i)Lip.*plump.*|.*(?i)Lip Liner.*|.*(?i)Lip Pencil.*|.*(?i)Lip Lacquer.*|.*(?i)Lip Velvet.*|.*(?i)Lip Matte.*|.*(?i)Lip Maestro.*|.*Burberry.*Kisses.*|.*Ultra Rouge.*|.*Gel Lacquer.*|.*Dior.*Addict Stell.*|.*Dior.*Addict Lip.*|.*Dior.*Addict Ultra.*|.*Yves Saint Laurent.*Rouge Pur Couture.*') 
         THEN "Lip Makeup"
     
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Cleansing.*|.*(?i)Cleanser.*|.*(?i)Facial.*cleaner.*|.*(?i)Facial.*soap.*|.*(?i)facial.*wash.*|.*(?i)Face Wash.*|.*(?i)peel.*|.*(?i)Exfoliater.*|.*(?i)Exfoliant.*|.*(?i)Cleansing.*Milk.*') 
@@ -45,15 +45,15 @@ CASE
         THEN "Lip Care"
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Eye.*mask.*|.*(?i)Eye.*(?i)cream.*|.*(?i)Eye.*serum.*|.*(?i)Eye.*balm.*|.*(?i)Essence.*eye.*|.*(?i)Eye.*Treatment.*|.*(?i)Eye.*essence.*|.*(?i)oil.*eye.*|.*(?i)Eye.*care.*|.*Estée Lauder.*Advanced Night Repair.*Eye.*|.*Estee Lauder.*Advanced Night Repair.*Eye.*|.*Clinique.*Radical Dark Spot.*') 
         THEN "Eye Care"
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Mist.*|.*(?i)*balm.*|.*Caudalie.*(?i)Grape Water.*|.*Avène.*Water.*') 
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Mist.*|.*(?i)*balm.*|.*(?i)Thermal.*Water.*|.*Caudalie.*(?i)Grape Water.*') 
         THEN "Mist/Balm"
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Essence.*|.*(?i)Ampoule.*|.*(?i)Serum.*|.*(?i)Capsules.*|.*(?i)Concentrate.*|.*(?i)Skin.*Lift.*|.*(?i)Ecological Compound.*|.*Estee Lauder.*(?i)Advanced Night Repair.*Recovery Complex.*|.*Lancôme.*Genifique.*') 
         THEN "Essence"
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Lotion.*|.*(?i)Cream.*|.*(?i)Crème.*|.*(?i)Emulsion.*') 
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Lotion.*|.*(?i)Cream.*|.*(?i)Crème.*|.*(?i)Emulsion.*|.*Clinique.*Moisturising Gel.*') 
         THEN "Facial Cream"
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Toner.*|.*(?i)Tonic.*|.*(?i)Confort Tonique.*') 
         THEN "Toner"
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Mask.*|.*Filorga.*Programme.*') 
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Mask.*|.*Filorga.*Programme.*|.*(?i)Dermalogica.*Recovery Masque.*') 
         THEN "Facial Mask"
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Oil.*') 
         THEN "Facial Oil"
