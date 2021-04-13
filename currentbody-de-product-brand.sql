@@ -3,7 +3,6 @@ CASE
 WHEN REGEXP_MATCH(sku,'^TR-.*') THEN "TriPollar"
 WHEN REGEXP_MATCH(sku,'^NF-.*') THEN "NuFACE"
 WHEN REGEXP_MATCH(sku,'^CL-.*') THEN "Clarisonic"
-WHEN REGEXP_MATCH(sku,'^CBD-.*') THEN "CurrentBody"
 WHEN REGEXP_MATCH(sku,'^SN-.*') THEN "Silk'n"
 WHEN REGEXP_MATCH(sku,'^RE-.*') THEN "ReFa"
 WHEN REGEXP_MATCH(sku,'^RI-.*') THEN "Rio"
@@ -22,6 +21,14 @@ WHEN REGEXP_MATCH(sku,'^LFT-.*') THEN "LifeTrons"
 WHEN REGEXP_MATCH(sku,'^LQ-.*') THEN "LARQ"
 WHEN REGEXP_MATCH(sku,'^IL-.*') THEN "iluminage"
 WHEN REGEXP_MATCH(sku,'^T3-.*') THEN "T3"
+WHEN REGEXP_MATCH(sku,'^MZ-.*') THEN "MZ Skin"
+WHEN REGEXP_MATCH(sku,'^LS-.*') THEN "LightStim"
+WHEN REGEXP_MATCH(sku,'^AT-.*') THEN "Artistic & Co"
+WHEN REGEXP_MATCH(sku,'^JV-.*') THEN "JOVS"
+
+WHEN REGEXP_MATCH(sku,'^CB-.*|^CBD-.*') THEN "CurrentBody"
+
 WHEN REGEXP_MATCH(sku,'^DEALMOON$') THEN "Dealmoon"
+
 
 END
