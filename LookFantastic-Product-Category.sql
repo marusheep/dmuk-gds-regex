@@ -1,14 +1,16 @@
 CASE
-WHEN REGEXP_MATCH(Product Name,'.*Free Gift.*|.*GWP.*') THEN "Free Gift"
-WHEN REGEXP_MATCH(Raw-Category,'Body.*(?i)Care.*') THEN "Bodycare"
-WHEN REGEXP_MATCH(Raw-Category,'Skin.*(?i)Care.*') THEN "Skin Care"
-WHEN REGEXP_MATCH(Raw-Category,'Hair.*(?i)Care.*') THEN "Haircare"
-WHEN REGEXP_MATCH(Raw-Category,'Nail.*(?i)Care.*') THEN "Nail Care"
-WHEN REGEXP_MATCH(Raw-Category,'Cosmetics.*') THEN "Cosmetics"
-WHEN REGEXP_MATCH(Raw-Category,'Fragrance.*') THEN "Fragrance"
-WHEN REGEXP_MATCH(Raw-Category,'Essentials.*') THEN "Essentials"
-WHEN REGEXP_MATCH(Raw-Category,'Tool.*') THEN "Tools"
-WHEN REGEXP_MATCH(Raw-Category,'Mens.*|Shaving.*') THEN "Men"
-WHEN REGEXP_MATCH(Raw-Category,'.*(?i)set.*|.*(?i)box.*') THEN "Beauty Box/Gift Set"
-ELSE "Others"
+	WHEN Product Type IN ("Dental Care","Shaving & Hair Removal","Styling Tool","Skincare Tool") 
+        THEN "Tools & Personal Care"
+    WHEN Product Type IN ("Nail Care")
+        THEN "Nail Care"
+    WHEN Product Type IN ("Perfurme","Candle","Diffuser","Pillow Mist")
+        THEN "Fragrance"
+    WHEN Product Type IN ("Shampoo & Conditioner","Hair Treatment")
+        THEN "Hair Care"
+    WHEN Product Type IN ("Hand & Foot Care","Bath/Body Wash","Body Oil/Body Lotion")
+        THEN "Body Care"
+    WHEN Product Type IN ("Lip Makeup","Complexion","Palette","Eye Makeup","Makeup Remover")
+        THEN "Cosmetics"
+    WHEN Product Type IN ("Sunscreen","Facial Oil","Facial Mask","Toner","Facial Cream","Essence","Mist/Balm","Eye Care","Lip Care","Peels/Face Cleanser")
+        THEN "Skin Care"
 END
