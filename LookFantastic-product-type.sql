@@ -34,7 +34,7 @@ CASE
         THEN "Eye Makeup"
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Palette.*') 
         THEN "Palette"
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Primer.*|.*(?i)Foundation.*|.*(?i)Concealer.*|.*(?i)Broner.*|.*(?i)Blush.*|.*(?i)Highlight.*|.*(?i)Powder.*|.*(?i)BB Cream.*|.*(?i)CC cream.*|.*NYX.*Setting Spray.*|.*Vita.*(?i)Body Blur.*|.*(?i)Stila.*Correct.*') 
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Primer.*|.*(?i)Foundation.*|.*(?i)Concealer.*|.*(?i)Broner.*|.*(?i)Blush.*|.*(?i)Highlight.*|.*(?i)Powder.*|.*(?i)BB Cream.*|.*(?i)CC cream.*|.*NYX.*Setting Spray.*|.*Vita.*(?i)Body Blur.*|.*(?i)Stila.*Correct.*|.*Yves Saint Laurent.*(?i)Moisture Glow.*') 
         THEN "Complexion"
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Lipstick.*|.*(?i)lip.*stain.*|.*(?i)lip.*gloss.*|.*(?i)lip.*tattoo.*|.*(?i)Lip.*oil.*|.*(?i)Lip.*plump.*|.*(?i)Lip Liner.*|.*(?i)Lip Pencil.*|.*(?i)Lip Lacquer.*|.*(?i)Lip Velvet.*|.*(?i)Lip Matte.*|.*(?i)Lip Maestro.*|.*(?i)lip.*pigment.*|.*Burberry.*Kisses.*|.*Ultra Rouge.*|.*Gel Lacquer.*|.*Dior.*Addict Stell.*|.*Dior.*Addict Lip.*|.*Dior.*Addict Ultra.*|.*Yves Saint Laurent.*Rouge Pur Couture.*') 
         THEN "Lip Makeup"
