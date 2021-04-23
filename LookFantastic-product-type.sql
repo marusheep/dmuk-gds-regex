@@ -1,7 +1,7 @@
 CASE
 	WHEN REGEXP_MATCH(Product Name,'.*NuFACE.*(?i)Device')
         THEN "Skincare Tool"
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Brush.*|.*(?i)Sponge.*|.*(?i)Eyelash Curler.*') 
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Brush.*|.*(?i)Sponge.*|.*(?i)Eyelash Curler.*|.*Tangle Teezer.*Compact Hair Styler.*') 
         THEN "Styling Tool"
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Hair Removal.*|.*(?i)Shaver.*') 
         THEN "Shaving & Hair Removal"
@@ -20,7 +20,7 @@ CASE
 
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Moroccan.*oil.*|.*(?i)Hair.*mask.*|.*Kerastase.*Masque.*|.*Kerastase.*(?i)Treatment.*|.*Kerastase.*Vita Ciment Advance.*') 
         THEN "Hair Treatment"
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Shampoo.*|.*(?i)conditioner.*|.*Kerastase.*(?i)Densifique Bain Densite.*|.*Kerastase Resistance.*Bain Force Architecte.*') 
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Shampoo.*|.*(?i)conditioner.*|.*Kerastase.*(?i)Densifique Bain Densite.*|.*Kerastase Resistance.*Bain Force Architecte.*|.*Aveda.*Scalp Revitalizer.*') 
         THEN "Shampoo & Conditioner"
 
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Body.*oil.*|.*(?i)Body lotion.*') 
