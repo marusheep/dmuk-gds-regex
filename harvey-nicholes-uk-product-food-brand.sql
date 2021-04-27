@@ -1,0 +1,26 @@
+CASE
+
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Alfieri.*') THEN "Alfieri"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Booja Booja.*') THEN "Booja Booja"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Butlers Chocolates.*') THEN "Butlers Chocolates"
+WHEN RAW-Brand = "Cartwright & Butler" THEN "Cartwright & Butler"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Charbonnel Et Walker.*') THEN "Charbonnel Et Walker"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Choconchoc.*') THEN "Choconchoc"
+WHEN RAW-Brand = "Coca-Cola" THEN "Coca-Cola"
+WHEN RAW-Brand = "Flower & White" THEN "Flower & White"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Glico.*') THEN "Glico"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Godiva.*') THEN "Godiva"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Harvey Nichols.*') THEN "Harvey Nichols"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Jealous Sweets.*') THEN "Jealous Sweets"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Marutai.*') THEN "Marutai"
+WHEN REGEXP_MATCH(RAW-Brand,'.*(?i)Manuka Honey.*') THEN "Manuka Honey"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Meiji.*') THEN "Meiji"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)OTHER FOODS CHIPS.*') THEN "OTHER FOODS CHIPS"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Ototo.*') THEN "Ototo"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Quaranta.*') THEN "Quaranta"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Rococo.*') THEN "Rococo"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Tiptree.*') THEN "Tiptree"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Torres.*') THEN "Torres"
+WHEN REGEXP_MATCH(RAW-Brand,'.^(?i)Walkers Shortbread.*') THEN "Walkers Shortbread"
+
+END
