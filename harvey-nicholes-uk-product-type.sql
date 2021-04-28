@@ -2,7 +2,7 @@ CASE
     WHEN Product Category 4 IN ('Cleansing Devices')
         THEN "Skincare Tool"
     
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Brush.*|.*(?i)Sponge.*|.*(?i)Eyelash Curler.*') OR Product Category 4 IN ('Sponges & Applicators')
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Brush.*|.*(?i)Sponge.*|.*(?i)Eyelash Curler.*') OR Product Category 4 IN ('Sponges & Applicators','Hair Accessories','Cosmetic Cases') OR (Product Category 3 IN ('Haircare') And Product Category 4 IN('Tools')) OR (Product Category 3 IN('Makeup Brushes & Tools') And Product Category 4 IN('Accessories'))
         THEN "Styling Tool"
 
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Hair Removal.*|.*(?i)Shaver.*')
@@ -11,7 +11,7 @@ CASE
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Toothbrush.*|.*(?i)Sonicare.*|.*(?i)Toothpaste.*|.*(?i)Toothpase.*|.*(?i)AirFloss.*|.*(?i)Mouthwash.*')
         THEN "Dental Care"
 
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Nail.*') OR Product Category 4 IN ('Nail Care')
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Nail.*') OR Product Category 4 IN ('Nail Care','Nail Varnish')
         THEN "Nail Care"
 
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Pillow Spray.*')
@@ -26,13 +26,13 @@ CASE
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Moroccan.*oil.*|.*(?i)Hair.*mask.*')
         THEN "Hair Treatment"
     
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Shampoo.*|.*(?i)conditioner.*')
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Shampoo.*|.*(?i)conditioner.*') OR Product Category 4 IN ('Shampoo')
         THEN "Shampoo & Conditioner"
 
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Body.*oil.*|.*(?i)Body lotion.*') OR (Product Category 3 IN ('Bath & Body') And Product Category 4 IN ('Treatments'))
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Body.*oil.*|.*(?i)Body lotion.*') OR (Product Category 3 IN ('Bath & Body') And Product Category 4 IN ('Treatments','Moisturiser'))
         THEN "Body Oil/Body Lotion"
     
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Bath.*|.*(?i)Shower gel.*|.*(?i)Shower.*oil.*|.*(?i)Body Wash.*|.*(?i)Body Polish.*|.*(?i)Feminine Wash.*') OR Product Category 4 IN ('Bath & Shower')
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Bath.*|.*(?i)Shower gel.*|.*(?i)Shower.*oil.*|.*(?i)Body Wash.*|.*(?i)Body Polish.*|.*(?i)Feminine Wash.*') OR Product Category 4 IN ('Bath & Shower') OR (Product Category 3 IN('Bath & Body') And Product Category 4 IN ('Exfoliator'))
         THEN "Bath/Body Wash"
 
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Hand.*cream.*|.*(?i)Hand.*balm.*|.*(?i)Hand Wash.*') OR Product Category 4 IN ('Hands')
@@ -41,7 +41,7 @@ CASE
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Make.*up remover.*|.*(?i)Make.*up removal.*') OR Product Category 4 IN ('Makeup Remover')
         THEN "Makeup Remover"
     
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Mascara.*|.*(?i)Eye lash.*|.*(?i)Eye brow.*|.*(?i)Eye.*shadow.*|.*(?i)Medium Brown.*|.*(?i)Eye.*liner.*|.*(?i)Eye.*(?i)Pencil.*|.*(?i)Brow.*Pencil.*|.*(?i)Brow Shaper.*|.*(?i)Eyebrow Crayon.*') OR Product Category 4 IN ('Eyeshadow','Eyeliner','Eyebrows')
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Mascara.*|.*(?i)Eye lash.*|.*(?i)Eye brow.*|.*(?i)Eye.*shadow.*|.*(?i)Medium Brown.*|.*(?i)Eye.*liner.*|.*(?i)Eye.*(?i)Pencil.*|.*(?i)Brow.*Pencil.*|.*(?i)Brow Shaper.*|.*(?i)Eyebrow Crayon.*') OR Product Category 4 IN ('Eyeshadow','Eyeliner','Eyebrows','Mascara','False Lashes')
         THEN "Eye Makeup"
 
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Palette.*|.*(?i)Eye.*Quad.*')
@@ -62,7 +62,7 @@ CASE
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Eye.*mask.*|.*(?i)Eye.*(?i)cream.*|.*(?i)Eye.*serum.*|.*(?i)Eye.*balm.*|.*(?i)Essence.*eye.*|.*(?i)Eye.*Treatment.*|.*(?i)Eye.*essence.*|.*(?i)oil.*eye.*|.*(?i)Eye.*care.*') OR Product Category 4 IN ('Eye Treatments')
         THEN "Eye Care"
 
-    WHEN REGEXP_MATCH(Product Name,'.*(?i)Mist.*|.*(?i)*balm.*|.*(?i)Thermal.*Water.*') OR (Product Category 3 IN ('Face') And Product Category 4 IN ('Setting Spray'))
+    WHEN REGEXP_MATCH(Product Name,'.*(?i)Mist.*|.*(?i)*balm.*|.*(?i)Thermal.*Water.*') OR Product Category 4 IN ('Face Mists') OR (Product Category 3 IN ('Face') And Product Category 4 IN ('Setting Spray'))
         THEN "Mist/Balm"
     
     WHEN REGEXP_MATCH(Product Name,'.*(?i)Essence.*|.*(?i)Ampoule.*|.*(?i)Serum.*|.*(?i)Capsules.*|.*(?i)Concentrate.*|.*(?i)Skin.*Lift.*|.*(?i)Ecological Compound.*') OR Product Category 4 IN ('Blemish Treatments','Redness Treatments','Serums','Hydration Treatments')
