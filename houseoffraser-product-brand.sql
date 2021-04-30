@@ -56,6 +56,7 @@ CASE
     WHEN REGEXP_MATCH(Product Name,'^Joules.*') THEN "Joules"
     WHEN REGEXP_MATCH(Product Name,'^Juicy Couture.*') THEN "Juicy Couture"
     WHEN REGEXP_MATCH(Product Name,'^Just Sheepskin.*') THEN "Just Sheepskin"
+    WHEN REGEXP_MATCH(Product Name,'^Jo Malone.*') OR Product Brand(raw) IN ('Jo Malone','Jo Malone London') THEN "Jo Malone"
 
     WHEN REGEXP_MATCH(Product Name,'^Karrimor.*') THEN "Karrimor"
     WHEN REGEXP_MATCH(Product Name,'^Kiehls.*') THEN "Kiehls"
@@ -64,16 +65,17 @@ CASE
     WHEN REGEXP_MATCH(Product Name,'^Linea.*') THEN "Linea"
     WHEN REGEXP_MATCH(Product Name,'^La Mer.*') THEN "La Mer"
     WHEN REGEXP_MATCH(Product Name,'^Lonsdale.*') THEN "Lonsdale"
-    WHEN REGEXP_MATCH(Product Name,'^Lacoste.*') THEN "Lacoste"
+    WHEN REGEXP_MATCH(Product Name,'^(?i)Lacoste.*') THEN "Lacoste"
     WHEN REGEXP_MATCH(Product Name,'^Laura Mercier.*') THEN "Laura Mercier"
     WHEN REGEXP_MATCH(Product Name,'^Levis.*') THEN "Levis"
 
-    WHEN REGEXP_MATCH(Product Name,'^MICHAEL.*') THEN "MICHAEL"
+    WHEN REGEXP_MATCH(Product Name,'^MICHAEL.*') OR Product Brand(raw) IN ('MICHAEL Michael Kors') THEN "Michael Kors"
     WHEN REGEXP_MATCH(Product Name,'^Marc Jacobs.*') THEN "Marc Jacobs"
     WHEN REGEXP_MATCH(Product Name,'^Mac.*') THEN "Mac"
-    WHEN REGEXP_MATCH(Product Name,'^Max Mara.*') THEN "Max Mara"
+    WHEN REGEXP_MATCH(Product Name,'^Max Mara.*') OR Product Brand(raw) IN ('Max Mara Weekend') THEN "Max Mara"
     WHEN REGEXP_MATCH(Product Name,'^Mugler Alien.*') THEN "Mugler Alien"
     WHEN REGEXP_MATCH(Product Name,'^Mario Valentino.*') THEN "Mario Valentino"
+    WHEN REGEXP_MATCH(Product Name,'.*Moschino.*') THEN "Moschino"
 
     WHEN REGEXP_MATCH(Product Name,'^Nars.*') THEN "Nars"
 
@@ -82,7 +84,7 @@ CASE
     WHEN REGEXP_MATCH(Product Name,'^Pixi.*') THEN "Pixi"
     WHEN REGEXP_MATCH(Product Name,'^Profusion Cosmetics.*') THEN "Profusion Cosmetics"
 
-    WHEN REGEXP_MATCH(Product Name,'^Ralph Lauren.*') THEN "Ralph Lauren"
+    WHEN REGEXP_MATCH(Product Name,'^Ralph Lauren.*') OR Product Brand(raw) IN ('Polo Ralph Lauren') THEN "Ralph Lauren"
     WHEN REGEXP_MATCH(Product Name,'^RFU.*') THEN "RFU"
     WHEN REGEXP_MATCH(Product Name,'^Radley.*') THEN "Radley"
     WHEN REGEXP_MATCH(Product Name,'^Reebok.*') THEN "Reebok"
@@ -97,7 +99,7 @@ CASE
     WHEN REGEXP_MATCH(Product Name,'^Sloggi.*') THEN "Sloggi"
     WHEN REGEXP_MATCH(Product Name,'^Superdry.*') THEN "Superdry"
 
-    WHEN REGEXP_MATCH(Product Name,'^Tom Ford.*') THEN "Tom Ford"
+    WHEN REGEXP_MATCH(Product Name,'^Tom Ford.*') OR Product Brand(raw) IN ('Tom Ford Beauty') THEN "Tom Ford"
     WHEN REGEXP_MATCH(Product Name,'^Tiffany.*') THEN "Tiffany"
     WHEN REGEXP_MATCH(Product Name,'^The North Face.*') THEN "The North Face"
     WHEN REGEXP_MATCH(Product Name,'^Three Floor.*') THEN "Three Floor"
