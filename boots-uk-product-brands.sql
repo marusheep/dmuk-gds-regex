@@ -30,7 +30,11 @@ CASE
     WHEN REGEXP_MATCH(Product Name,'Batiste.*') THEN "Batiste"
     WHEN REGEXP_MATCH(Product Name,'Baylis & Harding.*') THEN "Baylis & Harding"
 
-    WHEN REGEXP_MATCH(Product Name,'CHANEL.*') THEN "CHANEL"
+    WHEN REGEXP_MATCH(Product Name,'(?i)CHANEL.*') THEN "CHANEL"
+    WHEN REGEXP_MATCH(Product Name,'Carex.*') THEN "Carex"
+    WHEN REGEXP_MATCH(Product Name,'Cath Kidston.*') THEN "Cath Kidston"
+    WHEN REGEXP_MATCH(Product Name,'Centrum.*') THEN "Centrum"
+    WHEN REGEXP_MATCH(Product Name,'Champneys.*') THEN "Champneys"
     WHEN REGEXP_MATCH(Product Name,'Clarins.*') THEN "Clarins"
     WHEN REGEXP_MATCH(Product Name,'Curél.*') THEN "Curel"
     WHEN REGEXP_MATCH(Product Name,'Clinique.*') THEN "Clinique"
@@ -69,6 +73,9 @@ CASE
     WHEN REGEXP_MATCH(Product Name,'E45.*') THEN "E45"
     WHEN REGEXP_MATCH(Product Name,'Elasticated.*') THEN "Elasticated"
     WHEN REGEXP_MATCH(Product Name,'Elie Saab.*') THEN "Elie Saab"
+    WHEN REGEXP_MATCH(Product Name,'Ella.*s Kitchen.*') THEN "Ella's Kitchen"
+    WHEN REGEXP_MATCH(Product Name,'Emergen-C.*') THEN "Emergen-C"
+    WHEN REGEXP_MATCH(Product Name,'Essie.*') THEN "Essie"
 
     WHEN REGEXP_MATCH(Product Name,'Fenty.*') THEN "Fenty Beauty"
     WHEN REGEXP_MATCH(Product Name,'(?i)Femfresh.*') THEN "Femfresh"
