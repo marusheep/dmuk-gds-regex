@@ -149,8 +149,9 @@ CASE
     WHEN REGEXP_MATCH(Product Name,'Origins.*') THEN "Origins"
     WHEN REGEXP_MATCH(Product Name,'Optrex.*') THEN "Optrex"
     WHEN REGEXP_MATCH(Product Name,'OGX.*') THEN "OGX"
+    WHEN REGEXP_MATCH(Product Name,'Oral B.*|Oral-B.*') THEN "Oral-B"
 
-    WHEN REGEXP_MATCH(Product Name,'PIXI.*') THEN "PIXI"
+    WHEN REGEXP_MATCH(Product Name,'(?i)PIXI.*') THEN "PIXI"
     WHEN REGEXP_MATCH(Product Name,'Philips.*') THEN "Philips"
     WHEN REGEXP_MATCH(Product Name,'philosophy.*') THEN "philosophy"
     WHEN REGEXP_MATCH(Product Name,'Pampers.*') THEN "Pampers"
@@ -159,7 +160,6 @@ CASE
     WHEN REGEXP_MATCH(Product Name,'Pantene.*') THEN "Pantene"
     WHEN REGEXP_MATCH(Product Name,'Philip Kingsley.*') THEN "Philip Kingsley"
     WHEN REGEXP_MATCH(Product Name,'Philosophy.*') THEN "Philosophy"
-    WHEN REGEXP_MATCH(Product Name,'Pixi.*') THEN "Pixi"
     WHEN REGEXP_MATCH(Product Name,'Plantur.*') THEN "Plantur"
 
     WHEN REGEXP_MATCH(Product Name,'Regenerate.*') THEN "Regenerate"

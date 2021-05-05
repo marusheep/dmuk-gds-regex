@@ -1,6 +1,5 @@
 CASE
-    WHEN REGEXP_MATCH(cg_code,'.*BEAUTY.*|.*FRAGRANCE.*|.*PHOTO.*|.*DEFAULT.*|.*GIFT.*') THEN "BEAUTY"
-    WHEN REGEXP_MATCH(cg_code,'.*BABY.*') THEN "BABY"
-    WHEN REGEXP_MATCH(cg_code,'.*TOILETRIES.*') THEN "TOILETRIES"
-    WHEN REGEXP_MATCH(cg_code,'.*HEALTH.*') THEN "HEALTH"
+    WHEN Product Brands IN ('CHANEL','YSL','No7','Lancome','Garnier') THEN "Beauty"
+
+    WHEN Product Brands IN ('Boots') THEN "Mix"
 END
