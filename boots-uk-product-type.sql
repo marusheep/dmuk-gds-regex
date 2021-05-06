@@ -74,6 +74,21 @@ CASE
     WHEN Product Brands IN ('Lancome') AND REGEXP_MATCH(Product Name,'.*(?i)Gift with Purchase.*|.*(?i)Complimentary Gift.*')
         THEN "GWP"
 
+    WHEN Product Brands IN ('Estee Lauder') AND REGEXP_MATCH(Product Name,'.*(?i)Lipstick.*')
+        THEN "Lip Makeup"
+    WHEN Product Brands IN ('Estee Lauder') AND REGEXP_MATCH(Product Name,'.*(?i)Stay-in-Place Makeup SPF.*|.*(?i)Glow Primer.*|.*(?i)Makeup SPF.*')
+        THEN "Complexion"
+    WHEN Product Brands IN ('Estee Lauder') AND REGEXP_MATCH(Product Name,'.*(?i)Eye.*Complex.*|.*(?i)Eye Mask.*|.*(?i)Eye Cooling.*')
+        THEN "Eye Care"
+    WHEN Product Brands IN ('Estee Lauder') AND REGEXP_MATCH(Product Name,'.*(?i)Synchronized Multi-Recovery Complex.*|.*(?i)Intense Reset Concentrate.*|.*(?i)Repair Ampoules.*|.*(?i)Firm Lift Treatment.*')
+        THEN "Essence"
+    WHEN Product Brands IN ('Estee Lauder') AND REGEXP_MATCH(Product Name,'.*(?i)Power Creme.*|.*(?i)Power Crème.*|.*(?i)Lotion.*|.*(?i)Restorative Creme.*|.*(?i)Night Creme.*')
+        THEN "Facial Cream"
+    WHEN Product Brands IN ('Estee Lauder') AND REGEXP_MATCH(Product Name,'.*(?i)Cleansing Foam.*|.*(?i)Foam Cleanser.*|.*(?i)Perfectly Clean Multi-Action.*')
+        THEN "Peels/Face Cleanser"
     WHEN Product Brands IN ('Estee Lauder') AND REGEXP_MATCH(Product Name,'.*(?i)Gift Set.*')
         THEN "Gift Set"
+    WHEN Product Brands IN ('Estee Lauder') AND REGEXP_MATCH(Product Name,'.*(?i)Gift.*')
+        THEN "GWP"
+    
 END
